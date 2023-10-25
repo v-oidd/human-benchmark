@@ -44,7 +44,7 @@ try:
 		try:
 			current_flash = driver.find_element(By.CLASS_NAME, "square.active") 
 			# Ensure current flash is different to last flash to avoid duplicate flashes
-			if not square_flashes or current_flash != square_flashes[-1]:
+			if len(square_flashes) == 0 or current_flash != square_flashes[-1]:
 				square_flashes.append(current_flash)
 				last_time = time.time()
 	
