@@ -36,6 +36,7 @@ square_flashes = []
 
 try:
 	while True:
+		# Update square_flashes until it contains all the flashed squares
 		while len(square_flashes) < level:
 			square_flashes = driver.find_elements(By.CSS_SELECTOR, 'div.active')
 		
