@@ -1,6 +1,7 @@
 """
 Bot for https://humanbenchmark.com/tests/typing
-To stop the bot, press Ctrl+C - the website will stay open
+This will open a chrome tab where you are not signed in
+Press Ctrl+C and log in to save your results
 """
 
 from selenium import webdriver
