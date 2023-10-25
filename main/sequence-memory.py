@@ -29,22 +29,25 @@ square_flashes = []
 square_count = 1
 last_time = time.time() + 100
 
-while True:
-	# If >1s has passed since last flash, begin clicking squares
-	if time.time() - last_time > 1:
-		for square in square_flashes:
-			square.click()
-		# Last time is resetted to prevent next time check from executing immediately
-		last_time = time.time() + 100
-		square_flashes.clear()
-		square_count += 1
-		continue
-	try:
-		current_flash = driver.find_element(By.CLASS_NAME, "square.active") 
-		# Ensure current flash is different to last flash to avoid duplicate flashes
-		if not square_flashes or current_flash != square_flashes[-1]:
-			square_flashes.append(current_flash)
-			last_time = time.time()
-
-	except NoSuchElementException:
-		continue
+try:
+	while True:
+		# If >1s has passed since last flash, begin clicking squares
+		if time.time() - last_time > 1:
+			for square in square_flashes:
+				square.click()
+			# Last time is resetted to prevent next time check from executing immediately
+			last_time = time.time() + 100
+			square_flashes.clear()
+			square_count += 1
+			continue
+		try:
+			current_flash = driver.find_element(By.CLASS_NAME, "square.active") 
+			# Ensure current flash is different to last flash to avoid duplicate flashes
+			if not square_flashes or current_flash != square_flashes[-1]:
+				square_flashes.append(current_flash)
+				last_time = time.time()
+	
+		except NoSuchElementException:
+			continue
+except KeyboardInterrupt:
+	print("Bot stopped.")
