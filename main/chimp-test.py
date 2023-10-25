@@ -1,5 +1,5 @@
 """
-Bot for https://humanbenchmark.com/tests/sequence
+Bot for https://humanbenchmark.com/tests/chimp
 To stop the bot, press Ctrl+C - the website will stay open
 """
 
