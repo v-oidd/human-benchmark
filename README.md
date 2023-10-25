@@ -18,5 +18,5 @@ Bots that automatically complete tests on [Human Benchmark](https://humanbenchma
 | Aim Trainer      | ✅ |
 | Typing           | ✅ |
 | Number Memory    | ✅ |
-| Visual Memory    | ❌ |
+| Visual Memory    | ✅ |
 | Verbal Memory    | ❌ |
