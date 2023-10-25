@@ -1,5 +1,7 @@
-# Bot for https://humanbenchmark.com/tests/sequence
-# To stop the bot, press Ctrl+C - the website will stay open
+"""
+Bot for https://humanbenchmark.com/tests/sequence
+To stop the bot, press Ctrl+C - the website will stay open
+"""
 
 browser_options = Options()
 browser_options.add_experimental_option('excludeSwitches', ['enable-logging'])
