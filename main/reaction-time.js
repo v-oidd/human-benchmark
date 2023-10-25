@@ -3,7 +3,6 @@
  * Guaranteed 1-3ms & 100.0% percentile
  */
 
-// Mouse down event
 function triggerMouseDown(element) {
     const mouseDownEvent = new MouseEvent('mousedown', {
         'view': window,
