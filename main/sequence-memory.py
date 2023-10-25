@@ -1,4 +1,5 @@
 # Bot for https://humanbenchmark.com/tests/sequence
+# To stop the bot, press Ctrl+C - the website will stay open
 
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
