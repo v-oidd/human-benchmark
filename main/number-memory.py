@@ -32,15 +32,15 @@ start_button.click()
 
 try:
 	while True:
-		number = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, 'big-number'))).get_attribute('innerText')
+		number = WebDriverWait(driver, 1000).until(EC.presence_of_element_located((By.CLASS_NAME, 'big-number'))).get_attribute('innerText')
 
-		text_input = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//input[@pattern='[0-9]*' and @type='text']")))
+		text_input = WebDriverWait(driver, 1000).until(EC.element_to_be_clickable((By.XPATH, "//input[@pattern='[0-9]*' and @type='text']")))
 		text_input.send_keys(number)
 
-		submit_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//button[text()="Submit"]')))
+		submit_button = WebDriverWait(driver, 1000).until(EC.element_to_be_clickable((By.XPATH, '//button[text()="Submit"]')))
 		submit_button.click()
 
-		next_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//button[text()="NEXT"]')))
+		next_button = WebDriverWait(driver, 1000).until(EC.element_to_be_clickable((By.XPATH, '//button[text()="NEXT"]')))
 		next_button.click()
 except KeyboardInterrupt:
 	print("Bot stopped.")
