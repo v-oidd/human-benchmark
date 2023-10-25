@@ -47,8 +47,9 @@ try:
 			if len(square_flashes) == 0 or current_flash != square_flashes[-1]:
 				square_flashes.append(current_flash)
 				last_time = time.time()
-	
+				
 		except NoSuchElementException:
 			continue
+			
 except KeyboardInterrupt:
 	print("Bot stopped.")
