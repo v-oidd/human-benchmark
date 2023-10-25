@@ -4,19 +4,6 @@ Bots that automatically complete tests on [Human Benchmark](https://humanbenchma
 
 # How to use
 
-**JS Scripts:** Paste them into the console.
+**JS Scripts:** Paste the script into the console.
 
-**Python Scripts:** Run them to open a new Chrome tab controlled by the bot.
-
-# Completed Bots
-
-| Test             | Complete |
-| -----------------| --- |
-| Sequence Memory  | ✅ |
-| Reaction Time    | ✅ |
-| Chimp Test       | ✅ |
-| Aim Trainer      | ✅ |
-| Typing           | ✅ |
-| Number Memory    | ✅ |
-| Visual Memory    | ✅ |
-| Verbal Memory    | ❌ |
+**Python Scripts:** Run the script to open a new Chrome tab. Log in if you want to save your results, and press 'p' to start the bot.
