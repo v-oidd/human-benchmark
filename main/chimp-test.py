@@ -26,14 +26,17 @@ start_button.click()
 buttonCount = 4
 buttons = []
 
-while True:
-	for i in range(1, buttonCount+1):
-		buttons.append(driver.find_element(By.XPATH, f'//div[@data-cellnumber={str(i)}]'))
-	for button in buttons:
-		button.click()
-	# Increment by 1 as the next level will have 1 more button
-	buttonCount += 1
-	buttons.clear()
+try:
+	while True:
+		for i in range(1, buttonCount+1):
+			buttons.append(driver.find_element(By.XPATH, f'//div[@data-cellnumber={str(i)}]'))
+		for button in buttons:
+			button.click()
+		# Increment by 1 as the next level will have 1 more button
+		buttonCount += 1
+		buttons.clear()
 
-	continue_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//button[text()="Continue"]')))
-	continue_button.click()
+		continue_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//button[text()="Continue"]')))
+		continue_button.click()
+except KeyboardInterrupt:
+	print("Bot stopped.")
