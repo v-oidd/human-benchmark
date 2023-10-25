@@ -33,6 +33,7 @@ start_button.click()
 new_button = driver.find_element(By.XPATH, '//button[text()="NEW"]')
 seen = driver.find_element(By.XPATH, '//button[text()="SEEN"]')
 
+# Faster to search for an element in a set than in a list
 words = set()
 
 try:
