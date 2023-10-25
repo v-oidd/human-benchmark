@@ -25,9 +25,6 @@ cookie_popup.click()
 start_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//button[text()="Start"]')))
 start_button.click()
 
-square_rows = driver.find_elements(By.CLASS_NAME, "square-row")
-squares = [square for square in square_rows]
-
 square_flashes = []
 last_time = time.time() + 100
 
