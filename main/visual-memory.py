@@ -44,7 +44,7 @@ try:
 		
 		for square in square_flashes:
 			square.click()
-		
+		# Increment by 1 as the next level will have one more flashing square
 		level += 1
 
 except KeyboardInterrupt:
