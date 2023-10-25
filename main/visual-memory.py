@@ -3,7 +3,7 @@ Bot for https://humanbenchmark.com/tests/memory
 This will open a chrome tab where you are not signed in
 Log in before starting the bot to save your results
 Press 's' while on the start menu to start the bot
-Press Ctrl+C and log in to save your results
+Press Ctrl+C to stop the bot - the tab will stay open
 """
 
 from selenium import webdriver
