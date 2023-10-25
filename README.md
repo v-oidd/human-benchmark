@@ -1,6 +1,6 @@
 # Human Benchmark Bots
 
-> Bots that automatically complete games on [Human Benchmark](https://humanbenchmark.com/).
+> Bots that automatically complete games on [Human Benchmark](https://humanbenchmark.com/)
 
 # How to use
 
