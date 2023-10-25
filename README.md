@@ -7,7 +7,7 @@ Bots that automatically complete tests on [Human Benchmark](https://humanbenchma
 | Test             | Complete |
 | -----------------| --- |
 | Sequence Memory  | ✅ |
-| Reaction Time    | ❌ |
+| Reaction Time    | ✅ |
 | Aim Trainer      | ❌ |
 | Number Memory    | ❌ |
 | Verbal Memory    | ❌ |
