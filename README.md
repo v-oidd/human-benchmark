@@ -17,6 +17,6 @@ Bots that automatically complete tests on [Human Benchmark](https://humanbenchma
 | Chimp Test       | ✅ |
 | Aim Trainer      | ✅ |
 | Typing           | ✅ |
-| Number Memory    | ❌ |
+| Number Memory    | ✅ |
 | Visual Memory    | ❌ |
 | Verbal Memory    | ❌ |
