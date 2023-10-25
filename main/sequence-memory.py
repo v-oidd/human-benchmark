@@ -30,7 +30,6 @@ square_rows = square_grid.find_elements(By.CLASS_NAME, "square-row")
 squares = [square for square in square_rows]
 
 square_flashes = []
-square_count = 1
 last_time = time.time() + 100
 
 try:
@@ -42,7 +41,6 @@ try:
 			# Last time is resetted to prevent next time check from executing immediately
 			last_time = time.time() + 100
 			square_flashes.clear()
-			square_count += 1
 			continue
 		try:
 			current_flash = driver.find_element(By.CLASS_NAME, "square.active") 
