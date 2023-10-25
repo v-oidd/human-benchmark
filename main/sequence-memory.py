@@ -1,5 +1,8 @@
-# Bot for https://humanbenchmark.com/tests/sequence
-# To stop the bot, press Ctrl+C - the website will stay open
+"""
+Bot for https://humanbenchmark.com/tests/sequence
+This will open a chrome tab where you are not signed in
+Press Ctrl+C and log in to save your results
+"""
 
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
