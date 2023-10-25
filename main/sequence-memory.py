@@ -1,6 +1,8 @@
 """
-Bot for https://humanbenchmark.com/tests/sequence
+Bot for https://humanbenchmark.com/tests/verbal-memory
 This will open a chrome tab where you are not signed in
+Log in before starting the bot to save your results
+Press 's' while on the start menu to start the bot
 Press Ctrl+C and log in to save your results
 """
 
@@ -12,6 +14,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.chrome.options import Options
 import time
 
+user_start_button = 's'
+
 browser_options = Options()
 browser_options.add_experimental_option('excludeSwitches', ['enable-logging'])
 browser_options.add_experimental_option("detach", True)
@@ -21,6 +25,8 @@ driver.get("https://humanbenchmark.com/tests/sequence")
 
 cookie_popup = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//span[text()="AGREE"]')))
 cookie_popup.click()
+
+keyboard.wait(user_start_button)
 
 start_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//button[text()="Start"]')))
 start_button.click()
