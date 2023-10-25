@@ -1,4 +1,4 @@
-# Human Benchmark Bots [WIP]
+# Human Benchmark Bots
 
 Bots that automatically complete tests on [Human Benchmark](https://humanbenchmark.com/).
 
