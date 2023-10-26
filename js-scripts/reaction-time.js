@@ -1,5 +1,5 @@
 /* Bot for https://humanbenchmark.com/tests/reactiontime
- * Paste the script in the console once you are on the above link, before you press start
+ * Paste the script in the console once you are on the above link, before you click start
  * Guaranteed 1-3ms & 100.0% percentile
  */
 
