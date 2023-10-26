@@ -1,5 +1,5 @@
 /* Bot for https://humanbenchmark.com/tests/aim
- * Paste the script in the console once you are on the above link, before you begin the test
+ * Paste the script in the console once you are on the above link, before you click start
  * Guaranteed 1-3ms & 100.0% percentile
  */
 
