@@ -18,8 +18,8 @@ observer.observe(document, {
     subtree:   true
 });
 
-startButton = document.querySelector('.e19owgy710');
-startButton.click();
+let startButton = document.querySelector('.e19owgy710');
+startButton && startButton.click();
 
 let buttonCount = 4;
 
