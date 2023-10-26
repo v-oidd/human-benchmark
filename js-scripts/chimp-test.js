@@ -19,6 +19,7 @@ observer.observe(document, {
 });
 
 let startButton = document.querySelector('.e19owgy710');
+// Click start button if the user hasn't already clicked it
 startButton && startButton.click();
 
 let buttonCount = 4;
