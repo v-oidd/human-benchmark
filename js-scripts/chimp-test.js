@@ -17,6 +17,9 @@ observer.observe(document, {
     subtree:   true
 });
 
+startButton = document.querySelector('.e19owgy710');
+startButton.click();
+
 let buttonCount = 4;
 
 while (buttonCount < 41)
