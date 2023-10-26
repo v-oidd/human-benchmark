@@ -1,5 +1,6 @@
 /* Bot for https://humanbenchmark.com/tests/chimp
- * Paste the script in the console once you are on the above link, before you click 'Start Test'
+ * Paste the script in the console once you are on the above link
+ * Do not click 'Start Test'
  * NOTE: 41 is the maximum possible score
  */
 
