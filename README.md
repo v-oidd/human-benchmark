@@ -2,7 +2,7 @@
 
 > Bots that automatically complete games on [Human Benchmark](https://humanbenchmark.com/)
 
-# How to use
+## How to use
 
 **JS Scripts:** Paste the script into the console.
 
